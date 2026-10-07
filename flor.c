@@ -4,8 +4,9 @@
 #include <sys/types.h> 
 #include <sys/wait.h> 
  
-#define TALLO 3 
-#define PETALOS 4 
+#define TALLO 5 
+#define PETALOS 4
+#define FLOR 3 
  
 /* 
 Entrada: ninguna (usa las constantes de arriba) 
@@ -15,10 +16,9 @@ Descripcion: arbol de procesos en forma de flor
  
 int main(){ 
     pid_t pid_raiz = getpid(); 
-    int i, j, k;
-    int p = 4;
-    int t = 5;
-    int f = 3;
+    
+    
+    
  
  
     for(i=0; i<(t-1); i++){ 
@@ -37,11 +37,11 @@ int main(){
                             if(!fork()) 
                                 break; 
                         }
-                    } 
-                } 
-            } 
+                     
+                 
+             
         } 
-    } 
+     
  
 /* TODO: aqui va tu solucion. 
 Pistas:- Cada proceso del tallo debe crear DOS hijos: el siguiente 
