@@ -33,7 +33,7 @@ int main(){
                 if(j>0){ 
  
                     if(!fork()){ 
-                        for(k=0; k<p; k++){
+                        for(k=0; k<PETALOS; k++){
                             if(!fork()) 
                                 break; 
                         }
