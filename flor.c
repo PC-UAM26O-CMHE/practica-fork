@@ -21,12 +21,12 @@ int main(){
     
  
  
-    for(i=0; i<(t-1); i++){ 
+    for(i=0; i<(TALLO-1); i++){ 
         if(fork()) 
             break;      /*procesos en el tallo*/ 
  
-        if(i==(t-1)){ 
-            for(j=0; j<f; j++){  /*Flores*/ 
+        if(i==(TALLO-1)){ 
+            for(j=0; j<FLOR; j++){  /*Flores*/ 
                 if(fork()) 
                     break; 
  
